@@ -70,3 +70,138 @@
 2016-02-23 16:46:10 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
 2016-02-23 16:46:10 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
 2016-02-23 16:46:10 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 18:48:31 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 18:48:31 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 18:48:31 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 18:48:31 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 18:48:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 18:48:34 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 18:48:34 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 18:48:34 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 18:48:34 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 18:48:34 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 18:48:34 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 18:48:35 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 18:48:35 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 18:48:35 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 18:48:35 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 19:13:16 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 19:13:16 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 19:13:16 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 19:13:16 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 19:13:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 19:13:18 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 19:13:18 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 19:13:18 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 19:13:18 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 19:13:18 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 19:13:19 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 19:13:19 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:13:19 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:13:19 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:13:19 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 19:16:38 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 19:16:38 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 19:16:38 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 19:16:38 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 19:16:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 19:16:40 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 19:16:40 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 19:16:40 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 19:16:40 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 19:16:40 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 19:16:41 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 19:16:41 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:16:41 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:16:41 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:16:41 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 19:17:59 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 19:17:59 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 19:17:59 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 19:17:59 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 19:18:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 19:18:02 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 19:18:02 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 19:18:02 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 19:18:02 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 19:18:02 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 19:18:02 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 19:18:02 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:18:02 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:18:02 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:18:03 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 19:18:13 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 19:18:13 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 19:18:13 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 19:18:13 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 19:18:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 19:18:16 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 19:18:16 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 19:18:16 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 19:18:16 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 19:18:16 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 19:18:16 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 19:18:16 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:18:16 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:18:16 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:18:17 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 19:19:25 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 19:19:25 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 19:19:25 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 19:19:25 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 19:19:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 19:19:28 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 19:19:28 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 19:19:28 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 19:19:28 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 19:19:28 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 19:19:28 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 19:19:28 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:19:28 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:19:28 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:19:29 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 19:20:04 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 19:20:04 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 19:20:04 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 19:20:04 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 19:20:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 19:20:07 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 19:20:07 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 19:20:07 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 19:20:07 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 19:20:07 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 19:20:07 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 19:20:08 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:20:08 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:20:08 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:20:08 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 19:20:52 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 19:20:52 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 19:20:52 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 19:20:52 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 19:20:53 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 19:20:55 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 19:20:55 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 19:20:55 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 19:20:55 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 19:20:55 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 19:20:55 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 19:20:55 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:20:55 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:20:55 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:20:56 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
+2016-02-23 19:21:39 INFO  Version:37 - HHH000412: Hibernate Core {5.0.1.Final}
+2016-02-23 19:21:39 INFO  Environment:198 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=root, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.connection.url=jdbc:mysql://localhost:3306/StartupPlatform, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=com.mysql.jdbc.Driver}
+2016-02-23 19:21:39 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-23 19:21:39 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2016-02-23 19:21:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-23 19:21:42 WARN  DriverManagerConnectionProviderImpl:76 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-02-23 19:21:42 INFO  DriverManagerConnectionProviderImpl:149 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/StartupPlatform]
+2016-02-23 19:21:42 INFO  DriverManagerConnectionProviderImpl:158 - HHH000046: Connection properties: {user=root, password=****}
+2016-02-23 19:21:42 INFO  DriverManagerConnectionProviderImpl:163 - HHH000006: Autocommit mode: false
+2016-02-23 19:21:42 INFO  DriverManagerConnectionProviderImpl:85 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-02-23 19:21:42 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 19:21:43 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:21:43 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:21:43 WARN  deprecation:2441 - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-02-23 19:21:43 INFO  Version:17 - HV000001: Hibernate Validator 5.2.1.Final
