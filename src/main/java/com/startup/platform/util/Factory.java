@@ -1,11 +1,10 @@
 package com.startup.platform.util;
 
-import com.startup.platform.dao.UserDao;
 
 public class Factory {
 
     private static Factory instance = new Factory();
-    private UserDao userDao;
+//    private AddressDao addressDao;
 
     private Factory() {
     }
@@ -14,11 +13,10 @@ public class Factory {
         return Factory.instance;
     }
 
-    public UserDao getUserDao() {
-        if (userDao == null) {
-            userDao = new UserDaoImpl();
-        }
-        return userDao;
-    }
-
+//    public AddressDao getAddressDao() {
+//        if (addressDao == null) {
+//            addressDao = new AddressDaoImpl();
+//        }
+//        return addressDao;
+//    }
 }

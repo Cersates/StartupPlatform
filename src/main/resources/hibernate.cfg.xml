@@ -3,12 +3,13 @@
         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
+
     <session-factory>
+        <property name="hbm2ddl.auto">update</property>
 
-        <property name="hibernate.hbm2ddl.auto">create</property>
-
-        <mapping class="com.startup.platform.models.User"/>
-        <mapping class="com.startup.platform.models.Address"/>
-
+        <mapping class="com.startup.platform.model.User"/>
+        <mapping class="com.startup.platform.model.Role"/>
+        <mapping class="com.startup.platform.model.Project"/>
     </session-factory>
+
 </hibernate-configuration>

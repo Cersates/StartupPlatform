@@ -1,10 +1,10 @@
-package com.startup.platform.dao;
+package com.startup.platform.service;
 
 import com.startup.platform.model.Model;
 
 import java.util.List;
 
-public interface ItemDao<T extends Model> {
+public interface ItemService<T extends Model> {
 
     public List<T> getAll();
 
