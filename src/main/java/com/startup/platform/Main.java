@@ -2,24 +2,32 @@ package com.startup.platform;
 
 import com.startup.platform.dao.UserDao;
 import com.startup.platform.dao.impl.UserDaoImpl;
-import com.startup.platform.model.Payment;
 import com.startup.platform.model.Project;
 import com.startup.platform.model.User;
-import com.startup.platform.service.PaymentService;
+import com.startup.platform.service.UserService;
 import com.startup.platform.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        testSpring();
-//        testHibernate3();
+        testApp();
     }
+
+    private static void testApp() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/spring/spring-context.xml");
+        UserService service = (UserService) context.getBean("userService");
+
+
+
+        System.exit(0);
+
+    }
+
 
     private static void testHibernate1() {
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
@@ -30,7 +38,6 @@ public class Main {
         User user = new User();
         user.setFirstname("asd");
         user.setLastname("zxc");
-        user.setLogin("qwe");
         user.setPassword("123");
         Set<Project> projects = new HashSet<Project>();
         Project project1 = new Project();
@@ -65,7 +72,6 @@ public class Main {
         User user = new User();
         user.setFirstname("asd");
         user.setLastname("zxc");
-        user.setLogin("qwe");
         user.setPassword("123");
         Set<Project> projects = new HashSet<Project>();
         Project project1 = new Project();
@@ -102,12 +108,12 @@ public class Main {
 
     private static void testSpring() {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/spring/spring-context.xml");
-        PaymentService service = (PaymentService) context.getBean("paymentService");
+//        PaymentService service = (PaymentService) context.getBean("paymentService");
 
-        service.addPayment(new Payment(new BigDecimal("1000"), 1, 1));
-        for (Payment payment : service.getPayments()) {
-            System.out.println(payment.toString());
-        }
+//        service.addPayment(new Payment(new BigDecimal("1000"), 1, 1));
+//        for (Payment payment : service.getPayments()) {
+//            System.out.println(payment.toString());
+//        }
         System.out.println("ok");
 
     }

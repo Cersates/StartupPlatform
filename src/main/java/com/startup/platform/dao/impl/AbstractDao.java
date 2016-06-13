@@ -20,18 +20,19 @@ public abstract class AbstractDao<T extends Model> {
     public AbstractDao() {
         final ParameterizedType superClass = (ParameterizedType) getClass().getGenericSuperclass();
         clazz = (Class<T>) superClass.getActualTypeArguments()[0];
-        sessionFactory.openSession();
     }
 
     public List<T> getAll() {
         Criteria criteria = getSession().createCriteria(clazz);
         criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
+        getSession().close();
         return criteria.list();
     }
 
     public T getById(int id) {
         Criteria criteria = getSession().createCriteria(clazz);
         criteria.add(Restrictions.eq("id", id));
+        getSession().close();
         return (T) criteria.uniqueResult();
     }
 
@@ -40,7 +41,7 @@ public abstract class AbstractDao<T extends Model> {
         s.beginTransaction();
         s.save(model);
         s.getTransaction().commit();
-//        getSession().save(model);
+        s.close();
     }
 
     public void update(T model) {
@@ -48,7 +49,7 @@ public abstract class AbstractDao<T extends Model> {
         s.beginTransaction();
         s.merge(model);
         s.getTransaction().commit();
-//        getSession().merge(model);
+        s.close();
     }
 
     public void remove(T model) {
@@ -56,10 +57,15 @@ public abstract class AbstractDao<T extends Model> {
         s.beginTransaction();
         s.delete(model);
         s.getTransaction().commit();
-//        getSession().delete(model);
+        s.close();
     }
 
     public Session getSession() {
+        if (sessionFactory.isClosed()) {
+            System.out.println("======openSession");
+            sessionFactory.openSession();
+        }
+        System.out.println("======getSession");
         return sessionFactory.openSession();
     }
 }

@@ -13,31 +13,30 @@ import java.util.Set;
 public class User extends Model {
 
     @Size(min = 3, max = 25)
-    @NotNull
     @Column
-    private String login;
+    private String email;
 
+    @Size(min = 3, max = 25)
     @NotNull
     @Column
     private String password;
 
+    @Size(min = 3, max = 25)
     @Column
     private String firstname;
 
+    @Size(min = 3, max = 25)
     @Column
     private String lastname;
 
     @Column
-    private String dateBirth;
-
-    @Column
-    private String email;
+    private Date dateBirth;
 
     @Column
     private String about;
 
     @Column
-    Date registrationDate;
+    private Date registrationDate;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Set<Project> projects = new HashSet<Project>();
@@ -56,18 +55,10 @@ public class User extends Model {
         super(id);
     }
 
-    public User(String login, String password) {
+    public User(String email, String password) {
         super();
-        this.login = login;
+        this.email = email;
         this.password = password;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
     }
 
     public String getPassword() {
@@ -94,11 +85,11 @@ public class User extends Model {
         this.lastname = lastname;
     }
 
-    public String getDateBirth() {
+    public Date getDateBirth() {
         return dateBirth;
     }
 
-    public void setDateBirth(String dateBirth) {
+    public void setDateBirth(Date dateBirth) {
         this.dateBirth = dateBirth;
     }
 
@@ -145,15 +136,13 @@ public class User extends Model {
     @Override
     public String toString() {
         return "User{" +
-                "login='" + login + '\'' +
+                ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", dateBirth='" + dateBirth + '\'' +
-                ", email='" + email + '\'' +
+                ", dateBirth=" + dateBirth +
                 ", about='" + about + '\'' +
                 ", registrationDate=" + registrationDate +
-                ", roles=" + roles +
                 '}';
     }
 }

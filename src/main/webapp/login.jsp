@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>
@@ -10,42 +10,35 @@
 <html>
 <head>
     <title>Authorization</title>
-    <link href="/css/styles.jsp" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <%--<link href="./css/signin.css" rel="stylesheet">--%>
+    <link href="<c:url value="/resources/css/signin.css" />" rel="stylesheet">
 </head>
 <body>
 
-<div class="middle">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <div class="container">
-        <div align="center">
+
+<div class="container">
 
 
-            <f:form method="POST" commandName="user" action="login">
+    <f:form method="POST" commandName="user" action="login" cssClass='form-signin'>
 
-                <b>Login:</b><br>
-                <f:input path="login" size='20' cssClass='radial'/><br>
+        <label for="inputEmail" class="sr-only">Email</label>
+        <f:input path="email" id="inputEmail" class="form-control" placeholder="Email" required="required"/><br>
 
-                <b>Password:</b><br>
-                <f:input path="password" size='20' class='radial'/><br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <f:input path="password" id="inputPassword" class="form-control" placeholder="Password"
+                 required="required"/><br>
 
-                <input type="submit"/> <a href="/registration">Registration</a>
-            </f:form>
+        <p class="error"><c:out value="${requestScope.errMsg}"/></p>
 
-        </div>
-    </div>
-    <!-- .container-->
+        <input type="submit" value="Sign in" class="btn btn-lg btn-primary btn-block"/>
+        <a href="/registration" class="btn btn-lg btn-primary btn-block">Registration</a>
+    </f:form>
 
 
-</div>
-<!-- .middle-->
-
-<footer class="footer">
-    <p><strong>Одесса 2016 ©</strong></p>
-</footer>
-<!-- .footer -->
+</div> <!-- /container -->
 
 
 </body>

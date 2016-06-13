@@ -7,6 +7,7 @@ public class Factory {
 //    private AddressDao addressDao;
 
     private Factory() {
+        System.out.println("Factory");
     }
 
     public static Factory getInstance() {

@@ -1,23 +1,21 @@
 package com.startup.platform.controllers;
 
-import com.startup.platform.model.Payment;
 import com.startup.platform.model.Project;
 import com.startup.platform.model.User;
-import com.startup.platform.service.PaymentService;
 import com.startup.platform.service.ProjectService;
 import com.startup.platform.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
 @Controller
-public class PaymentController {
-
-    @Autowired(required = true)
-    private PaymentService paymentService;
+public class ApplicationController {
 
     @Autowired(required = true)
     private UserService userService;
@@ -48,7 +46,7 @@ public class PaymentController {
 
         List<User> allUsers = userService.getAll();
         for (User user : allUsers) {
-            if ((user.getLogin().equals(userInp.getLogin())) &&
+            if ((user.getEmail().equals(userInp.getEmail())) &&
                     (user.getPassword().equals(userInp.getPassword()))) {
                 userSession = user;
 //                model.addAttribute("userId", user.getId());
@@ -124,42 +122,5 @@ public class PaymentController {
         System.out.println("(add) new project: " + project);
         return "redirect:homeUser";
     }
-
-
-    //================================================================
-    @RequestMapping(value = "/payments")
-    public String allPayments(Model model) {
-        model.addAttribute("payments", paymentService.getPayments());
-        return "payments.jsp";
-    }
-
-    @RequestMapping(value = "/add-payment", method = RequestMethod.GET)
-    public String addPayment() {
-        return "add-payment.jsp";
-    }
-
-    @ModelAttribute("payment")
-    public Payment newPayment() {
-        return new Payment();
-    }
-
-    @RequestMapping(value = "/payments", method = RequestMethod.POST)
-    public String addPayment(@ModelAttribute("payment") Payment payment) {
-        paymentService.addPayment(payment);
-        return "redirect:payments";
-    }
-
-    @RequestMapping(value = "/payments/{id}", method = RequestMethod.GET)
-    public String getPayment(@PathVariable("id") long id, Model model) {
-        model.addAttribute("payment", paymentService.get(id));
-        return "/payment.jsp";
-    }
-
-    @RequestMapping(value = "/payments/{id}", method = RequestMethod.GET, headers = {"content-type=application/xml"})
-    @ResponseBody
-    public Payment getPayment(@PathVariable("id") long id) {
-        return paymentService.get(id);
-    }
-
 
 }

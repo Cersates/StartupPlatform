@@ -21,8 +21,8 @@
 
             <f:form method="POST" commandName="user" action="registration">
 
-                <b>Login:</b><br>
-                <f:input path="login" size='20' cssClass='radial'/><br>
+                <b>Email:</b><br>
+                <f:input path="email" size='20' class='radial' spellcheck="false"/><br>
 
                 <b>Password:</b><br>
                 <f:input path="password" size='20' class='radial' spellcheck="false"/><br>
@@ -32,9 +32,6 @@
 
                 <b>Lastname:</b><br>
                 <f:input path="lastname" size='20' class='radial' spellcheck="false"/><br>
-
-                <b>Email:</b><br>
-                <f:input path="email" size='20' class='radial' spellcheck="false"/><br>
 
                 <b>About:</b><br>
                 <f:textarea path="about" size='20' class='radial' spellcheck="false"/><br>
