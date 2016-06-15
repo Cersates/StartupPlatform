@@ -6,12 +6,26 @@
 
     <display-name>Sturtup Platform</display-name>
 
+    <context-param>
+        <param-name>contextConfiguration</param-name>
+        <param-value>/WEB-INF/spring/spring-context.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/spring/web-context.xml</param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>mvcServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:/spring/web-context.xml</param-value>
+            <param-value>WEB-INF/spring/web-context.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>

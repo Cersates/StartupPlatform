@@ -10,20 +10,26 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.math.BigInteger;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        testApp();
+//        testApp();
+        BigInteger i1 = new BigInteger("2");
+        BigInteger i2 = new BigInteger("1");
+        System.out.println(i1.compareTo(i2));
+
+//        1==1=0
+//        1==2=-1
+//        2==1=
     }
 
     private static void testApp() {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/spring/spring-context.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/WEB-INF/spring/spring-context.xml");
         UserService service = (UserService) context.getBean("userService");
-
-
-
+        testHibernate1();
         System.exit(0);
 
     }
@@ -54,6 +60,11 @@ public class Main {
         projects.add(project1);
         projects.add(project2);
         user.setProjects(projects);
+
+        Set<Project> favor = new HashSet<Project>();
+        favor.add(project1);
+        user.setFavorites(favor);
+
 
         session.save(user);
 
@@ -107,7 +118,7 @@ public class Main {
     }
 
     private static void testSpring() {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/spring/spring-context.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/WEB-INF/spring/spring-context.xml");
 //        PaymentService service = (PaymentService) context.getBean("paymentService");
 
 //        service.addPayment(new Payment(new BigDecimal("1000"), 1, 1));

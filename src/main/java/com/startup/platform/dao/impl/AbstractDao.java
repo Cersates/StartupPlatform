@@ -8,6 +8,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 
 import java.lang.reflect.ParameterizedType;
+import java.util.Comparator;
 import java.util.List;
 
 public abstract class AbstractDao<T extends Model> {
@@ -26,7 +27,17 @@ public abstract class AbstractDao<T extends Model> {
         Criteria criteria = getSession().createCriteria(clazz);
         criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
         getSession().close();
-        return criteria.list();
+        Comparator с = new Comparator<T>() {
+            public int compare(T o1, T o2) {
+                if (o1.getId() > o2.getId()) {
+                    return 1;
+                }
+                return -1;
+            }
+        };
+        List<T> list = criteria.list();
+        list.sort(с);
+        return list;
     }
 
     public T getById(int id) {
@@ -62,10 +73,8 @@ public abstract class AbstractDao<T extends Model> {
 
     public Session getSession() {
         if (sessionFactory.isClosed()) {
-            System.out.println("======openSession");
             sessionFactory.openSession();
         }
-        System.out.println("======getSession");
         return sessionFactory.openSession();
     }
 }

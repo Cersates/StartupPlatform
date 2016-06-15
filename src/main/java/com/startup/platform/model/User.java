@@ -38,6 +38,14 @@ public class User extends Model {
     @Column
     private Date registrationDate;
 
+    @Column
+    private String type;
+
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "favorites", joinColumns = @JoinColumn(name = "user_id", nullable = false, updatable = false),
+            inverseJoinColumns = @JoinColumn(name = "project_id", nullable = false, updatable = false))
+    private Set<Project> favorites = new HashSet<Project>();
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Set<Project> projects = new HashSet<Project>();
 
@@ -133,16 +141,33 @@ public class User extends Model {
         this.roles = roles;
     }
 
+    public Set<Project> getFavorites() {
+        return favorites;
+    }
+
+    public void setFavorites(Set<Project> favorites) {
+        this.favorites = favorites;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                ", email='" + email + '\'' +
+                "email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", dateBirth=" + dateBirth +
                 ", about='" + about + '\'' +
                 ", registrationDate=" + registrationDate +
+                ", type='" + type + '\'' +
                 '}';
     }
 }

@@ -2,6 +2,10 @@ package com.startup.platform.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.math.BigInteger;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 //Роли пользователей
 @Entity
@@ -12,12 +16,25 @@ public class Project extends Model {
     @Column
     private String title;
 
+    @Lob
     @Column
     private String description;
+
+    @Column
+    private Date dateRegistration;
+
+    @Column
+    private BigInteger financing;
+
+    @Column
+    private String sphere;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @ManyToMany(mappedBy = "favorites")
+    private Set<User> users = new HashSet<User>();
 
     public String getTitle() {
         return title;
@@ -35,6 +52,30 @@ public class Project extends Model {
         this.description = description;
     }
 
+    public Date getDateRegistration() {
+        return dateRegistration;
+    }
+
+    public void setDateRegistration(Date dateRegistration) {
+        this.dateRegistration = dateRegistration;
+    }
+
+    public BigInteger getFinancing() {
+        return financing;
+    }
+
+    public void setFinancing(BigInteger financing) {
+        this.financing = financing;
+    }
+
+    public String getSphere() {
+        return sphere;
+    }
+
+    public void setSphere(String sphere) {
+        this.sphere = sphere;
+    }
+
     public User getUser() {
         return user;
     }
@@ -48,6 +89,9 @@ public class Project extends Model {
         return "Project{" +
                 "title='" + title + '\'' +
                 ", description='" + description + '\'' +
+                ", dateRegistration=" + dateRegistration +
+                ", financing=" + financing +
+                ", sphere='" + sphere + '\'' +
                 '}';
     }
 }
