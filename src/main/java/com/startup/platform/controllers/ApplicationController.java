@@ -17,6 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 @Controller
 @SessionAttributes("userSession")
@@ -106,6 +107,7 @@ public class ApplicationController {
         }
 
         model.addAttribute("projectList", userSession.getProjects());
+        model.addAttribute("fav", userSession.getFavorites());
         return "/homeUser";
     }
 
@@ -347,6 +349,48 @@ public class ApplicationController {
         userService.update(userSession);
         return "homeUser";
     }
+
+
+    //================================
+
+    @RequestMapping(value = "/addToFavorites/{id}", method = RequestMethod.GET)
+    public String addToFavorites(@PathVariable("id") int id, Model model) {
+        if ((userSession == null) || (userSession.getId() < 0)) {
+            return "redirect:../login";
+        }
+
+        Set<Project> newFav = userSession.getFavorites();
+        Project p = projectService.getById(id);
+        if (!newFav.contains(p)) {
+            newFav.add(p);
+        }
+        userSession.setFavorites(newFav);
+        userService.update(userSession);
+
+        model.addAttribute("fav", newFav);
+        return "/homeUser";
+    }
+
+    @RequestMapping(value = "/removeFromFavorites/{id}", method = RequestMethod.GET)
+    public String removeFromFavorites(@PathVariable("id") int id, Model model) {
+        if ((userSession == null) || (userSession.getId() < 0)) {
+            return "redirect:../login";
+        }
+
+        Set<Project> newFav = userSession.getFavorites();
+        Project p = projectService.getById(id);
+        if (newFav.contains(p)) {
+            newFav.remove(p);
+        }
+
+        userSession.setFavorites(newFav);
+        userService.update(userSession);
+
+        model.addAttribute("fav", newFav);
+        return "/homeUser";
+    }
+
+//================================
 
 
 }

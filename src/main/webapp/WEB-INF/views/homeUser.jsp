@@ -37,9 +37,7 @@
                 </c:forEach>
             </div>
         </div>
-    </c:if>
 
-    <c:if test="${userSession.type == 'Startuper'}">
         <div class="col-sm-8">
 
             <c:if test="${!empty info}">
@@ -59,7 +57,7 @@
             <c:if test="${empty info}">
                 <h3 align="center">Info about me</h3>
                 <p>${userSession.getFirstname()} ${userSession.getLastname()}</p>
-                <p>Date Birth: ${userSession.getDateBirth()}</p>
+                <%--<p>Date Birth: ${userSession.getDateBirth()}</p>--%>
                 <p>Email: ${userSession.getEmail()}</p>
                 <p>About me: ${userSession.getAbout()}</p>
                 <a href="/editUser" type="button" class="btn btn-xs btn-success">Edit info</a>
@@ -69,10 +67,18 @@
     </c:if>
 
     <c:if test="${userSession.type != 'Startuper'}">
-    <div class="col-sm-12">
+    <div class="col-sm-4">
+        <h3>My favorites startups:</h3>
+        <div class="list-group">
+            <c:forEach var="project" items="${fav}">
+                <a href="/projectInfo/${project.getId()}" class="list-group-item">${project.getTitle()}</a>
+            </c:forEach>
+        </div>
+    </div>
+    <div class="col-sm-8">
         <h3 align="center">Info about me</h3>
         <p>${userSession.getFirstname()} ${userSession.getLastname()}</p>
-        <p>Date Birth: ${userSession.getDateBirth()}</p>
+        <%--<p>Date Birth: ${userSession.getDateBirth()}</p>--%>
         <p>Email: ${userSession.getEmail()}</p>
         <p>About me: ${userSession.getAbout()}</p>
         <a href="/editUser" type="button" class="btn btn-xs btn-success">Edit info</a>

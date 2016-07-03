@@ -27,13 +27,11 @@
         <h2 class="form-signin-heading">Please sign in</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <f:input path="email" type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                 required="required" autofocus="autofocus"
-                 value="aaa@aaa"/><br>
+                 required="required" autofocus="autofocus"/><br>
 
         <label for="inputPassword" class="sr-only">Password</label>
         <f:input path="password" type="password" id="inputPassword" class="form-control" placeholder="Password"
-                 required="required"
-                 value="aaa"/><br>
+                 required="required"/><br>
 
         <c:if test="${not empty message}">
             <div class="alert alert-danger" role="alert">

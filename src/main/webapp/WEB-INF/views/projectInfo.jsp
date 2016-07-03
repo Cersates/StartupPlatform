@@ -73,7 +73,10 @@
             <h1>${project.getTitle()}</h1>
         </div>
         <div>
-            <%--<button type="button" class="btn btn-xs btn-success">Add to favorite</button>--%>
+            <a href="/addToFavorites/${project.getId()}" type="button" class="btn btn-xs btn-success">Add to
+                favorite</a>
+            <a href="/removeFromFavorites/${project.getId()}" type="button" class="btn btn-xs btn-danger">Remove from
+                favorite</a>
             <br/>
             Founder: <a href="/userInfo/${user.getId()}"> ${user.getFirstname()} ${user.getLastname()}</a><br/>
             Date registration: ${project.getDateRegistration()}<br/>
